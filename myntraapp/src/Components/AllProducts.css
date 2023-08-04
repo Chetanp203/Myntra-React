@@ -1,0 +1,24 @@
+.prod-page{
+    width: 100%;
+    padding-top: 20px;
+}
+.pro-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.pro-card{
+    width: 21%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.pro-card img{
+    width: 95%;
+    height: 70%;
+}
+
+.addtobag{
+    width: 150px;
+    border: 1px solid black;
+}

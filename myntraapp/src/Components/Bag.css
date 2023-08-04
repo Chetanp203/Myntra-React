@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.b-container{
+    width: 100%;
+    background-color:rgb(236,236,236) ;
+
+}
+.left-con{
+    width: 65%;
+    /* padding-left: 60px; */
+    
+  
+}
+.left-con button{
+    width: 250px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 300px;
+    margin-bottom: 20px;
+}
+.cong{
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 100px;
+    background-color: rgb(232,243,243);
+    margin: 20px 0px 20px 40px;
+
+}
+.b-con2{
+    width: 100%;
+    background-color: rgb(236,236,236);
+    padding-left: 70px;
+}
+
+.save-wish{
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    
+}
+.bag-pro{
+    width: 140px;
+    height: 190px;
+    margin: 15px;
+    border-radius: 5px;
+}
+.del-icon{
+    padding: 0px 10px;
+}
+.right-con{
+        width: 30%;
+        
+    }
+
+    .coupons{
+        width: 90%;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .check{
+        width: 90%;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+    }
+    .check2{
+        width: 100%;
+        padding: 30px;
+        line-height: 40px;
+
+    }
+    .check3{
+        width: 100%;
+        padding: 30px;
+    }
+    .check3 button{
+        width: 60%;
+        border: none;
+        background-color: rgb(202, 25, 84);
+        color: white;
+        border-radius: 25px;
+    }

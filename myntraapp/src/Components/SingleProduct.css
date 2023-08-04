@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    width: 100%;
+}
+.container1{
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+}
+.left{
+    width: 50%;
+}
+.right1{
+    width: 50%;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+.flex{
+    display: flex;
+}
+.space{
+    justify-content: space-between;
+}
+.big{
+    width: 100%;
+    justify-content: space-around;
+}
+.big img{
+    width: 45%;
+    border-radius: 10px;
+
+}
+.small{
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+.small img{
+    width: 28%;
+    border-radius: 10px;
+}
+
+img:hover{
+    cursor: pointer;
+}
+.pink{
+    color: rgb(218,28,92);
+}
+
+.blue{
+    color: rgb(9, 67, 226);
+}
+.green{
+    color: green;
+}
+.popular{
+    width: 290px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color:rgb(252, 226, 234) ;
+    padding: 7px;
+    align-items: center;
+}
+.size-btn{
+    width: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    margin: 20px 0px;
+}
+.size-btn:hover{
+    cursor: pointer;
+}
+.ofer img{
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+
+}
+.pin{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 7px;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+    display: flex;
+}
+.delev img{
+    margin-right: 10px;
+}
+.mpi{
+display: flex;
+border: 1px solid black;
+border-radius: 5px;
+padding: 10px;
+}
+.mpi img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.store{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(251,232,239) ;
+    padding: 20px;
+
+}
+.puma{
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+.vs{
+    width: 450px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(218,28,92)  ;
+    font-size:medium;
+    font-weight: bolder;
+    color: rgb(218,28,92);
+    background-color: white;
+
+}
+.by-nw{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(218,28,92)  ;
+    font-size:medium;
+    font-weight: bolder;
+    color: rgb(218,28,92);
+    background-color: white;
+
+}
+.btns{
+    width: 100%;
+}
+.btns div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    align-items: center;
+    margin-left:5px;
+}
+.atb{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(218,28,92)  ;
+    font-size:medium;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    margin-left: 20px;
+
+}
+.extra-pro{
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.gadget{
+    width: 20%;
+    height: 400px;
+    line-height: 30px;
+}
+.gadget img{
+    width: 100%;
+}
+.tshirt{
+    width: 18%;
+    height: 400px;
+}
+.tshirt img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.size-select button{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 7px;
+}
