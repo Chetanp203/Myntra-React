@@ -79,7 +79,7 @@ const SingleProduct = () => {
                 getProduct[i].price = singleProduct.price;
                 getProduct[i].category = singleProduct.category;
 
-                localStorage.setItem("products", JSON.stringify(getProduct));
+                localStorage.setItem("Products", JSON.stringify(getProduct));
                 alert("updated success");
                 setUpdateProdContainer(false);
             }
@@ -229,10 +229,7 @@ const SingleProduct = () => {
                                             </form>
 
                                         </div>
-                                        {/* <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div> */}
+                                        
                                     </div>
                                 </div>
                             </div>

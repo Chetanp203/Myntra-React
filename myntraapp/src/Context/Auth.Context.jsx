@@ -8,9 +8,9 @@ const initialState = {user: null};
 function reducer(state, action){
     switch(action.type){
         case "login":
-            return{user: action.payload}
+            return{...state,user: action.payload}
             case"logout":
-            return{user: null}
+            return{...state,user: null}
             default:
                 return state;
     }

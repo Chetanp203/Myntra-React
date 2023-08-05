@@ -69,25 +69,25 @@ const AllProducts = () => {
                                     textAlign: "center",
                                     marginLeft: "3%",
                                     padding: '10px',
-                                    borderRadius:'5px'
+                                    borderRadius: '5px'
                                 }}
                                 onClick={() => route(`/singleproduct/${item.id}`)}
                             >
-                                
+
                                 <img
                                     width="100%"
                                     height="200px"
                                     src={item.image}
                                     alt="broken image"
                                 />
-                                
-                                <p style={{ fontSize: '27px',fontWeight:'bolder',fontFamily:'arial' }}>{item.title}</p>
+
+                                <p style={{ fontSize: '15px', fontWeight: 'bolder', fontFamily: 'arial' }}>{item.title}</p>
                                 <h5>Category :{item.category}</h5>
                                 <p style={{ fontSize: '25px' }}><b>Rs.{item.price}</b></p>
 
-                                {state?.user?.role == "Seller" ? <button className='addtobag' style={{width:'90%',height:'30px',backgroundColor:'rgb(255,62,108)',border:'none',color:'white',borderRadius:'5px'}}>Update Product</button>
+                                {state?.user?.role == "Seller" ? <button className='addtobag' style={{ width: '90%', height: '30px', backgroundColor: 'rgb(255,62,108)', border: 'none', color: 'white', borderRadius: '5px' }}>Update Product</button>
                                     :
-                                    <button className='addtobag' onClick={addCart} style={{width:'90%',height:'30px',backgroundColor:'rgb(255,62,108)',color:'white',border:'none',borderRadius:'5px'}}>Add to cart</button>}
+                                    <button className='addtobag' onClick={addCart} style={{ width: '90%', height: '30px', backgroundColor: 'rgb(255,62,108)', color: 'white', border: 'none', borderRadius: '5px' }}>Add to cart</button>}
                             </div>
                         ))
                     ) : (
@@ -103,7 +103,7 @@ const AllProducts = () => {
             )}
 
 
-           
+
 
 
         </div>

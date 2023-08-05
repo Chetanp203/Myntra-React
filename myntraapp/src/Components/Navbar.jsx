@@ -10,11 +10,10 @@ const Navbar = () => {
     console.log(state,"-state")
     const [userData, setUserData] = useState({name:"", email:"",password:"", role:"Buyer",cart:[]});
     const router = useNavigate();
-    console.log(userData,"-userdata");
-    const [user, setUser] = useState();
+    const [user, setUser] = useState({});
   
     useEffect(()=> {
-       if(state?.user){
+       if(state?.user?.email){
         setUser(state?.user)
        }else{
         setUser({});
@@ -51,7 +50,7 @@ const Navbar = () => {
                                         D
                                     </button> */}
                                     <ul class="dropdown-menu" style={{width:'250px',padding:'20px',lineHeight:'15px'}}>
-                                        <li onClick={()=> router("/profile")}><a class="dropdown-item" href="#"><b>Hello -{user?.name}</b></a></li>
+                                       <li onClick={()=> router("/profile")}><a class="dropdown-item" href="#"><b>Hello -{user?.name}-{user?.role}</b></a></li>
                                         <li><a class="dropdown-item" href="#">9004003518</a></li>
                                         <li onClick={()=> router("/login")}><a class="dropdown-item" href="#">Login</a></li>
                                         {state?.user?.role == "Seller" && <li onClick={()=>router("/add-products")}><a class="dropdown-item" href="#">+ Add Products</a></li>}
@@ -69,7 +68,7 @@ const Navbar = () => {
                                         <li><a class="dropdown-item" href="#">Saved Addresses</a></li>
                                         <hr />
                                         <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                                        <li><a class="dropdown-item" href="#" onClick={logout} onClick={()=> router("/")}>Logout</a></li>
+                                        <li><a class="dropdown-item" href="#" onClick={logout} >Logout</a></li>
                                     </ul>
                                 {/* </div> */}
                             </div>
