@@ -11,8 +11,12 @@ import SingleProduct from './Components/SingleProduct';
 import Bag from './Components/Bag';
 import AddProducts from './Components/AddProducts';
 import Profile from './Components/Profile';
+import { useContext } from 'react';
+import { AuthContext } from './Context/Auth.Context';
 
 function App() {
+  const {state}= useContext(AuthContext);
+  console.log(state?.user,"user here")
   return (
     <div>
       <Navbar/>

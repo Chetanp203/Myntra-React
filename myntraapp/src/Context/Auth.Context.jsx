@@ -1,3 +1,4 @@
+import axios from "axios";
 import { createContext ,useReducer} from "react";
 import { useEffect } from "react";
 
@@ -19,31 +20,25 @@ function reducer(state, action){
 const AuthProvider = ({children}) => {
      const [state, dispatch] = useReducer(reducer, initialState);
 
-     const login = (userData) => {
-        localStorage.setItem("Current-user", JSON.stringify(userData))
-        dispatch({
-            type: 'login',
-            payload: userData
-        })
-    }
-    const logout = () =>{
-        localStorage.removeItem("Current-user")
-        dispatch({type : 'logout'})
- 
-   }
-
-   useEffect(()=> {
-    const isUserPresent = JSON.parse(localStorage.getItem("Current-user"));
-    if (isUserPresent){
-        dispatch({
-            type: 'login',
-            payload: isUserPresent
-        })
-    }
-},[])
-
+    // useEffect(()=>{
+    //   async  function getCurrentUserData(){
+    //       let token = JSON.parse(localStorage.getItem("token"));
+    //       const response = await axios.post("http://localhost:8002/get-current-user",{token});
+    //       if(response.data.success){
+    //         dispatch({
+    //             type: "login",
+    //             payload: response.data.user
+    //         })
+    //       }else{
+    //         dispatch({
+    //             type:"logout",
+    //         });
+    //       }
+    //     }
+    //     getCurrentUserData();
+    // },[])
    return (
-    <AuthContext.Provider value={{state, login, logout}}>
+    <AuthContext.Provider value={{state, dispatch}}>
         {children}
 
     </AuthContext.Provider>
